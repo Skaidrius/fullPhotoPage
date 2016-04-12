@@ -22,9 +22,11 @@ body {
   flex-direction: column;
 }
 
-body {
+#bg {
   background: url(../img/IMG_20150711_202203.jpg) no-repeat center center fixed;
   background-size: cover;
+  min-width: 100%;
+  min-height: 100%;
 }
 
 .headNav, 

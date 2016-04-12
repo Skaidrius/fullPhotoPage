@@ -15,7 +15,10 @@ var imgs = [
 setInterval(function(){
         idx = Math.floor(Math.random()*len); // for random order
         //idx = (idx+1)%len;   //for queue order 1 to ...n 
-        $("body").css("background", "#000 url("+imgs[idx]+") no-repeat center center fixed");
+        $("#bg").css("background", "#000 url("+imgs[idx]+") no-repeat center center fixed")
+        .css("background-size", "cover")
+        .css("min-height", "100%")
+        .css("min-width", "100%");
     }, 10000);
 
 
