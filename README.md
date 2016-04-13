@@ -6,7 +6,13 @@
 
 
 to do: 
-    pics database;
-    users management - login/logout/add photos/share to social networks
-    
+    pics database 
+        - JSON file done
+        need to write to remote datebase 
+    users management 
+        login
+        logout
+        add photos
+        share to social networks
+    responsive design
     ads for some coffee
