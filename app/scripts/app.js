@@ -1,13 +1,24 @@
 $(document).ready(function(){
 
-var imgs = [], likes = [], len, idx= -1;
+var imgs = [], 
+    likes = [], 
+    authors = [],
+    titles = [],
+    places = [],
+    albums = [],
+    len, 
+    idx= -1;
 
 $.getJSON( "scripts/imglist.json", function(data){ 
     $(data.pictures).each(function() {
         //console.log("images loaded successfuly");
-            imgs.push( this.src );
-            likes.push ( this.likes );
-        //console.log(likes)
+        imgs.push( this.src );
+        likes.push( this.likes );
+        authors.push( this.author );
+        titles.push( this.title );
+        places.push( this.place );
+        albums.push( this.album );
+        //console.log(likes) //for testing of arrays
     });
     len = imgs.length;
 })
@@ -26,7 +37,7 @@ function fillPage(){
         .css("background-size", "cover")
         .css("min-height", "100%")
         .css("min-width", "100%");
-        $('.likesNum').html(likes[idx]);
+    $('.likesNum').html(likes[idx]);
 }
 
 setTimeout(function(){

@@ -1,6 +1,6 @@
 # FullPhotoPage
 
-## Sample page with nice relaxing views infinite carousel 
+## Sample page with nice relaxing views on infinite carousel
 
 ### HTML, CSS3, JQuery, JSON, Ajax, Flexbox, Simple auto slider
 
@@ -13,11 +13,20 @@ to do:
     users management
         database
         login
+            with 
+                fb
+                twitter
+                google
+                login/password
         logout
         add photos
         share to social networks
             photos
             albums
+    
+    likes of photo 
+        notifications for author 
+            weekly email ?
     
     responsive design
     
