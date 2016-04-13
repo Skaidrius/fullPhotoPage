@@ -9,7 +9,8 @@ to do:
     pics database 
         - JSON file done
         need to write to remote datebase 
-    users management 
+    users management
+        database
         login
         logout
         add photos
