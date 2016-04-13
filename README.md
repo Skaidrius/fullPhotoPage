@@ -2,7 +2,7 @@
 
 ## Sample page with nice relaxing views infinite carousel 
 
-### HTML, CSS3, JQuery, JSON, Ajax, Flexbox, Simple slider
+### HTML, CSS3, JQuery, JSON, Ajax, Flexbox, Simple auto slider
 
 
 to do: 
