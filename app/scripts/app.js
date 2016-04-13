@@ -1,16 +1,18 @@
 $(document).ready(function(){
 
-var imgs = [
-    "./img/IMG_20150711_202203.jpg", 
-    "./img/IMG_20150711_202214.jpg", 
-    "./img/IMG_20150711_202927.jpg",
-    "./img/IMGP1845.jpg",
-    "./img/IMGP2046.jpg",
-    "./img/IMGP2383.jpg",
-    "./img/IMGP2701.jpg"
-],  
-    len = imgs.length, 
-    idx = -1;
+var imgs = [], len, idx= -1;
+
+$.getJSON( "scripts/imglist.json", function(data){ 
+    $(data.pictures).each(function() {
+        console.log("images loaded successfuly");
+            imgs.push( this.src );
+    });
+    len = imgs.length;
+})
+    .fail(function() {
+    console.log( "error" );
+    });
+
 
 setInterval(function(){
         idx = Math.floor(Math.random()*len); // for random order
